@@ -1,16 +1,37 @@
-const botao = document.getElementById("investigar");
+const botaoInvestigar = document.getElementById("investigar");
+
+const tela1 = document.getElementById("tela1");
+const tela2 = document.getElementById("tela2");
+
 const status = document.getElementById("status");
 
-botao.addEventListener("click", () => {
+const continuar = document.getElementById("continuar");
+
+
+botaoInvestigar.addEventListener("click", () => {
 
     status.textContent = "Analisando arquivo...";
 
     setTimeout(() => {
+
         status.textContent = "Identidade confirmada: HANAKO.";
+
     }, 1200);
 
+
     setTimeout(() => {
-        status.textContent = "A investigação continuará em breve...";
-    }, 2800);
+
+        tela1.classList.add("escondida");
+
+        tela2.classList.remove("escondida");
+
+    }, 2500);
+
+});
+
+
+continuar.addEventListener("click", () => {
+
+    alert("Próximo registro desbloqueado.");
 
 });
