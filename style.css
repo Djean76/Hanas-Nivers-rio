@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #08070d;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 50% 45%, rgba(116, 55, 150, 0.25), transparent 35%),
+        radial-gradient(circle at 20% 20%, rgba(180, 70, 150, 0.12), transparent 25%),
+        #08070d;
+    z-index: -2;
+}
+
+.stars {
+    position: fixed;
+    inset: 0;
+    background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(rgba(255,255,255,.5) 1px, transparent 1px);
+    background-size: 90px 90px, 140px 140px;
+    background-position: 10px 20px, 50px 80px;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+}
+
+.content {
+    max-width: 700px;
+    animation: aparecer 2s ease;
+}
+
+.warning {
+    color: #c58cff;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
+
+h1 {
+    font-size: clamp(45px, 9vw, 85px);
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    text-shadow:
+        0 0 10px rgba(190, 100, 255, 0.7),
+        0 0 35px rgba(190, 100, 255, 0.3);
+}
+
+.subtitle {
+    font-size: clamp(16px, 3vw, 21px);
+    color: #bdb6c8;
+    line-height: 1.6;
+    margin-bottom: 45px;
+}
+
+.secret {
+    color: #e5b6ff;
+}
+
+button {
+    background: transparent;
+    color: white;
+    border: 1px solid #a85ee8;
+    padding: 16px 35px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(168, 94, 232, 0.15);
+}
+
+button:hover {
+    background: #a85ee8;
+    box-shadow: 0 0 30px rgba(168, 94, 232, 0.6);
+    transform: translateY(-3px);
+}
+
+#status {
+    margin-top: 30px;
+    color: #81788a;
+    font-size: 13px;
+    min-height: 20px;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
