@@ -443,3 +443,186 @@ button:hover {
     }
 
 }
+/* ========================= */
+/* QUIZ */
+/* ========================= */
+
+.quiz-box {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 30px auto;
+
+    padding: 25px;
+
+    border: 1px solid rgba(168, 94, 232, 0.5);
+
+    border-radius: 10px;
+
+    background: rgba(168, 94, 232, 0.04);
+
+    box-shadow:
+        0 0 30px rgba(168, 94, 232, 0.08);
+}
+
+#numero-pergunta {
+    color: #a85ee8;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+}
+
+.quiz-box h3 {
+    font-size: 21px;
+
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+}
+
+#opcoes {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.opcao {
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid rgba(168, 94, 232, 0.35);
+
+    border-radius: 7px;
+
+    background: rgba(255,255,255,0.02);
+
+    color: #ddd6e3;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+    font-size: 15px;
+}
+
+.opcao:hover {
+    border-color: #a85ee8;
+
+    background: rgba(168, 94, 232, 0.12);
+
+    transform: translateX(4px);
+}
+
+.opcao.correta {
+    border-color: #8cffb0;
+
+    background: rgba(80, 255, 130, 0.08);
+
+    color: #baffc9;
+}
+
+.opcao.errada {
+    border-color: #ff7b9c;
+
+    background: rgba(255, 80, 120, 0.08);
+
+    color: #ffb0c3;
+}
+
+#feedback {
+    min-height: 25px;
+
+    margin-top: 20px;
+
+    color: #e5b6ff;
+
+    font-size: 14px;
+}
+
+
+/* ========================= */
+/* RESULTADO */
+/* ========================= */
+
+.result-box {
+    max-width: 500px;
+
+    margin: 35px auto;
+
+    padding: 30px;
+
+    border: 1px solid rgba(168, 94, 232, 0.5);
+
+    border-radius: 10px;
+
+    background: rgba(168, 94, 232, 0.05);
+
+    box-shadow:
+        0 0 35px rgba(168, 94, 232, 0.12);
+}
+
+.result-title {
+    color: #a85ee8;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+}
+
+#pontuacao {
+    font-size: 60px;
+
+    font-weight: bold;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 20px rgba(190, 100, 255, 0.6);
+
+    margin-bottom: 20px;
+}
+
+#diagnostico {
+    color: #e5b6ff;
+
+    line-height: 1.6;
+
+    font-size: 17px;
+}
+
+
+/* ========================= */
+/* CELULAR */
+/* ========================= */
+
+@media (max-width: 600px) {
+
+    .quiz-box {
+        padding: 18px;
+    }
+
+    .quiz-box h3 {
+        font-size: 18px;
+    }
+
+    .opcao {
+        font-size: 14px;
+
+        padding: 14px;
+    }
+
+    #pontuacao {
+        font-size: 50px;
+    }
+
+}
