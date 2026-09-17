@@ -9,7 +9,9 @@ body {
     background: #08070d;
     color: #ffffff;
     font-family: Arial, sans-serif;
-    overflow: hidden;
+    /* Permite rolagem no celular */
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .background {
@@ -62,7 +64,7 @@ body {
 
     text-align: center;
 
-    padding: 25px;
+    padding: 50px 25px;
 }
 
 .content {
@@ -217,4 +219,52 @@ button:hover {
         transform: translateY(0);
     }
 
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        align-items: flex-start;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .warning {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    h1 {
+        font-size: 55px;
+        word-break: break-word;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+    .story {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .highlight {
+        font-size: 16px;
+        padding: 18px 12px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 320px;
+        padding: 15px 20px;
+    }
 }
