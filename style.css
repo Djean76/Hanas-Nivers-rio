@@ -624,5 +624,103 @@ button:hover {
     #pontuacao {
         font-size: 50px;
     }
+    
+}
+/* ========================= */
+/* MUSEU DA HANAKO */
+/* ========================= */
+
+.gallery {
+    width: 100%;
+    max-width: 750px;
+
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.gallery-item {
+    overflow: hidden;
+
+    border: 1px solid rgba(168, 94, 232, 0.35);
+
+    border-radius: 10px;
+
+    background: rgba(168, 94, 232, 0.04);
+
+    transition: 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+
+    border-color: #a85ee8;
+
+    box-shadow:
+        0 0 25px rgba(168, 94, 232, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+
+    height: 260px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+.gallery-caption {
+    padding: 17px;
+
+    text-align: left;
+}
+
+.gallery-caption span {
+    color: #a85ee8;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+}
+
+.gallery-caption h3 {
+    margin-top: 8px;
+
+    margin-bottom: 7px;
+
+    font-size: 18px;
+}
+
+.gallery-caption p {
+    color: #99919f;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* ========================= */
+/* GALERIA NO CELULAR */
+/* ========================= */
+
+@media (max-width: 600px) {
+
+    .gallery {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .gallery-item img {
+        height: auto;
+
+        max-height: 450px;
+    }
 
 }
