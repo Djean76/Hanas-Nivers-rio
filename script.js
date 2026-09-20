@@ -360,20 +360,21 @@ function mostrarResultado() {
 }
 
 
-document.getElementById("proxima-etapa")
-    .addEventListener("click", () => {
-
-        trocarTela(tela6, tela7);
-
-    });
-
+document.getElementById("proxima-etapa").addEventListener("click", () => {
+    trocarTela("tela6", "tela7");
+});
 
 document.getElementById("carta").addEventListener("click", () => {
     trocarTela("tela7", "tela8");
 
     const musica = document.getElementById("musica-final");
 
-    musica.currentTime = 0;
-    musica.volume = 0.35;
-    musica.play();
+    if (musica) {
+        musica.currentTime = 0;
+        musica.volume = 0.35;
+
+        musica.play().catch((erro) => {
+            console.log("Não foi possível iniciar a música:", erro);
+        });
+    }
 });
