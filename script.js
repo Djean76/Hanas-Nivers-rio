@@ -19,6 +19,8 @@ const tela5 = document.getElementById("tela5");
 
 const tela6 = document.getElementById("tela6");
 
+const tela7 = document.getElementById("tela7");
+
 
 const status = document.getElementById("status");
 
@@ -359,6 +361,14 @@ function mostrarResultado() {
 document.getElementById("proxima-etapa")
     .addEventListener("click", () => {
 
-        alert("Próximo arquivo ainda está classificado como CONFIDENCIAL.");
+        trocarTela(tela6, tela7);
+
+    });
+
+
+document.getElementById("carta")
+    .addEventListener("click", () => {
+
+        alert("ARQUIVO FINAL BLOQUEADO. Acesso será liberado posteriormente.");
 
     });
