@@ -361,11 +361,11 @@ function mostrarResultado() {
 
 
 document.getElementById("proxima-etapa").addEventListener("click", () => {
-    trocarTela("tela6", "tela7");
+    trocarTela(tela6, tela7); 
 });
 
 document.getElementById("carta").addEventListener("click", () => {
-    trocarTela("tela7", "tela8");
+    trocarTela(tela7, tela8);
 
     const musica = document.getElementById("musica-final");
 
