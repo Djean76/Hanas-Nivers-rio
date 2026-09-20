@@ -724,3 +724,189 @@ button:hover {
     }
 
 }
+
+/* ========================= */
+/* ARQUIVO FINAL */
+/* ========================= */
+
+.final-warning {
+    color: #e5b6ff;
+
+    font-size: 12px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 35px;
+
+    opacity: 0.8;
+}
+
+.letter-intro {
+    max-width: 600px;
+
+    margin: 0 auto 45px;
+
+    color: #aaa2b2;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+.letter-intro p {
+    margin-bottom: 20px;
+}
+
+.letter-intro p:nth-child(2) {
+    color: #ffffff;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    text-shadow:
+        0 0 15px rgba(229,182,255,0.5);
+}
+
+
+/* CARTA */
+
+.letter {
+    width: 100%;
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    background: rgba(255,255,255,0.97);
+
+    color: #242026;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 15px 50px rgba(0,0,0,0.4);
+
+    text-align: left;
+
+    overflow: hidden;
+}
+
+.letter-top {
+    padding: 15px 20px;
+
+    background: #eee9f2;
+
+    color: #74697b;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    border-bottom: 1px solid #ddd6e1;
+}
+
+.letter h2 {
+    color: #302934;
+
+    text-align: center;
+
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    margin: 35px 20px 25px;
+
+    text-shadow: none;
+}
+
+.letter-content {
+    padding: 0 40px 40px;
+
+    font-family: Georgia, serif;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+}
+
+.letter-content p {
+    margin-bottom: 22px;
+}
+
+.signature {
+    margin-top: 35px;
+
+    text-align: right;
+
+    font-style: italic;
+}
+
+
+/* MENSAGEM FINAL */
+
+.final-message {
+    margin-top: 50px;
+
+    padding-bottom: 50px;
+
+    color: #aaa2b2;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+.final-message span {
+    display: block;
+
+    margin-top: 20px;
+
+    font-size: 30px;
+
+    animation: pulsar 2s infinite;
+}
+
+
+@keyframes pulsar {
+
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .letter-intro {
+        font-size: 16px;
+    }
+
+    .letter h2 {
+        font-size: 32px;
+
+        margin-top: 28px;
+    }
+
+    .letter-content {
+        padding: 0 22px 30px;
+
+        font-size: 16px;
+
+        line-height: 1.8;
+    }
+
+    .final-warning {
+        letter-spacing: 3px;
+    }
+
+}
