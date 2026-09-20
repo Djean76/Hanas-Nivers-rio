@@ -21,6 +21,8 @@ const tela6 = document.getElementById("tela6");
 
 const tela7 = document.getElementById("tela7");
 
+const tela8 = document.getElementById("tela8");
+
 
 const status = document.getElementById("status");
 
@@ -369,6 +371,6 @@ document.getElementById("proxima-etapa")
 document.getElementById("carta")
     .addEventListener("click", () => {
 
-        alert("ARQUIVO FINAL BLOQUEADO. Acesso será liberado posteriormente.");
+        trocarTela(tela7, tela8);
 
     });
