@@ -368,9 +368,12 @@ document.getElementById("proxima-etapa")
     });
 
 
-document.getElementById("carta")
-    .addEventListener("click", () => {
+document.getElementById("carta").addEventListener("click", () => {
+    trocarTela("tela7", "tela8");
 
-        trocarTela(tela7, tela8);
+    const musica = document.getElementById("musica-final");
 
-    });
+    musica.currentTime = 0;
+    musica.volume = 0.35;
+    musica.play();
+});
